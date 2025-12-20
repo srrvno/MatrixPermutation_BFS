@@ -1,0 +1,54 @@
+# =========================
+# Entornos virtuales
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Variables de entorno
+# =========================
+.env
+.env.*
+
+# =========================
+# Bytecode / cache Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Cache de herramientas
+# =========================
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Build / distribución
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Logs y temporales
+# =========================
+*.log
+*.tmp
+*.swp
+*.swo
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
