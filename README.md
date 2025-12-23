@@ -56,7 +56,9 @@ Transform the initial matrix into the target matrix using **only rotations of in
 
 Each rotation affects exactly four elements and produces a new matrix configuration (state).
 
-![target](docs/images/target.png)
+<div align="center">
+  <img src="docs/images/target.png" width="420">
+</div>
 
 ---
 
@@ -91,11 +93,15 @@ $$
 
 Each of these submatrices represents a **possible rotation move**, meaning that from any given state, up to ( (n - 1)^2 ) new states can be generated.
 
-![branch factor](docs/images/branch_factor.png)
+<div align="center">
+  <img src="docs/images/branch_factor.png" width="420">
+</div>
 
 #### Illustration of 2×2 Submatrices
 
-![2x2 mat](docs/images/subm_2x2.png)
+<div align="center">
+  <img src="docs/images/subm_2x2.png" width="420">
+</div>
 
 
 This value acts as the **branching factor** of the search tree.
@@ -199,7 +205,10 @@ This ensures efficient pruning of the search tree.
 
 The rotation logic operates on matrices, as this is the most natural representation for manipulating submatrices.
 
-![rotation](docs/images/rotation.png)
+<div align="center">
+  <img src="docs/images/rotation.png" width="420">
+</div>
+
 
 
 To integrate this with BFS:
